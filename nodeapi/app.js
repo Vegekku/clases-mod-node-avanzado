@@ -19,6 +19,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/facturas', express.static('d:\facturas'));
 
 /**
+ * Setup de i18n
+ */
+const i18n = require('./lib/i18nConfigure')();
+app.use(i18n.init);
+
+console.log(i18n.__('Application title'));
+
+/**
  * Conexión a la base de datos y definición de modelos
  */
 require('./lib/connectMongoose');

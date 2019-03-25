@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "cross-env DEBUG=nodeapi:* nodemon",
-    "install_db": "node ./install_db"
+    "install_db": "node ./install_db",
+    "cluster": "node ./bin/cluster"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -15,6 +16,7 @@
     "express": "~4.16.0",
     "express-validator": "^5.3.1",
     "http-errors": "~1.6.2",
+    "i18n": "^0.8.3",
     "mongoose": "^5.4.4",
     "morgan": "~1.9.0",
     "nodemon": "^1.18.9"
